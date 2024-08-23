@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  data-theme="light"
+  lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>Landing page design with Tailwind & DaisyUI</title>
+
+    <!-- Google Font CDN -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#ABEF5F",
+              brandBlack: "#212121",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Feather Icon CDN -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section -->
+    <section class="h-screen bg-gradient-to-t from-white to-transparent">
+      <!-- Container -->
+      <div class="container mx-auto">
+        <!-- Header -->
+        <header class="navbar pt-12">
+          <div class="flex-1">
+            <img
+              src="./img/logo.png"
+              alt="" />
+          </div>
+          <ul class="menu menu-horizontal text-base">
+            <li>
+              <a
+                href="#"
+                class="hover:font-bold hover:bg-transparent font-bold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:font-bold hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:font-bold hover:bg-transparent"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:font-bold hover:bg-transparent"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:font-bold hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div>
+            <ul class="menu menu-horizontal">
+              <li>
+                <a href="#"><i data-feather="search"></i></a>
+              </li>
+              <li>
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-lg bg-brand font-bold text-xl text-gray-800 rounded-full">
+              Book Consult
+              <div class="bg-gray-900 p-3 rounded-full">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.0109 2.10278L1.00728 13.0991"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round" />
+                  <path
+                    d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </header>
+        <div class="hero">
+          <div class="hero-content flex-col text-center gap-8">
+            <img
+              src="./img/hero-image.png"
+              alt="" />
+            <div class="max-w-5xl">
+              <h1 class="text-6xl font-extrabold text-brandBlack">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="text-gray-600 mt-6">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+            </div>
+
+            <a
+              href="#"
+              class="btn btn-lg bg-brand bg-opacity-50 border border-brand font-bold text-xl text-gray-800 rounded-full">
+              View Details
+              <div class="bg-brand p-3 rounded-full">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.0109 2.10278L1.00728 13.0991"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round" />
+                  <path
+                    d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feather Function -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
