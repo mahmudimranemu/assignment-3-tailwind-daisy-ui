@@ -53,17 +53,19 @@
   </head>
   <body>
     <!-- Header Section -->
-    <section class="h-screen bg-gradient-to-t from-white to-transparent">
+    <section class="lg:h-screen bg-gradient-to-t from-white to-transparent">
       <!-- Container -->
-      <div class="container mx-auto">
+      <div class="container p-6 mx-auto">
         <!-- Header -->
-        <header class="navbar pt-12">
-          <div class="flex-1">
+        <header class="navbar pt-3 justify-between">
+          <div class="">
             <img
               src="./img/logo.png"
               alt="" />
           </div>
-          <ul class="menu menu-horizontal text-base">
+
+          <!-- Main Mneu -->
+          <ul class="hidden lg:flex menu menu-horizontal text-base">
             <li>
               <a
                 href="#"
@@ -100,52 +102,275 @@
               >
             </li>
           </ul>
-          <div>
-            <ul class="menu menu-horizontal">
+          <!-- Right nav -->
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal gap-4 items-center">
               <li>
-                <a href="#"><i data-feather="search"></i></a>
+                <a
+                  href="#"
+                  class="bg-white rounded-full border border-gray-200 p-3">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.5075 17.5098L22.006 22.0113"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M20.0096 11.0104C20.0113 6.03982 15.9832 2.00904 11.0126 2.00739C6.04207 2.00573 2.01129 6.03383 2.00964 11.0044C2.00799 15.975 6.03609 20.0057 11.0066 20.0074C15.9772 20.009 20.008 15.981 20.0096 11.0104Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a
+                  href="#"
+                  class="bg-white rounded-full border border-gray-200 p-3">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.00795 16.028L15.2711 16.0304C19.7587 16.0319 20.4422 13.2129 21.2713 9.1015C21.5104 7.91561 21.63 7.32267 21.3431 6.92751C21.0561 6.53235 20.5058 6.53216 19.4052 6.5318L6.01111 6.52734"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round" />
+                    <path
+                      d="M8.00795 16.0282L5.39083 3.54225C5.16855 2.65184 4.36878 2.02698 3.45105 2.02668L2.5126 2.02637"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round" />
+                    <path
+                      d="M8.88797 16.0283L8.47653 16.0282C7.11318 16.0277 6.00758 17.1786 6.00711 18.5987C6.00703 18.8354 6.19117 19.0274 6.4184 19.0275L17.507 19.0312"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M10.506 22.0288C11.3344 22.0291 12.0062 21.3577 12.0065 20.5293C12.0067 19.7009 11.3354 19.0291 10.507 19.0288C9.67853 19.0285 9.00673 19.6999 9.00646 20.5283C9.00618 21.3567 9.67753 22.0285 10.506 22.0288Z"
+                      stroke="#737373"
+                      stroke-width="1.5" />
+                    <path
+                      d="M17.506 22.0313C18.3344 22.0315 19.0062 21.3602 19.0065 20.5318C19.0067 19.7033 18.3354 19.0315 17.507 19.0313C16.6785 19.031 16.0067 19.7023 16.0065 20.5308C16.0062 21.3592 16.6775 22.031 17.506 22.0313Z"
+                      stroke="#737373"
+                      stroke-width="1.5" />
+                  </svg>
+                </a>
               </li>
+              <!-- CTA Button -->
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-lg bg-brand font-bold text-xl text-gray-800 rounded-full">
+                  Book Consult
+                  <div class="bg-gray-900 p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <!-- ./ -->
             </ul>
-            <a
-              href="#"
-              class="btn btn-lg bg-brand font-bold text-xl text-gray-800 rounded-full">
-              Book Consult
-              <div class="bg-gray-900 p-3 rounded-full">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12.0109 2.10278L1.00728 13.0991"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round" />
-                  <path
-                    d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </div>
-            </a>
           </div>
+          <!-- Mobile Menu -->
+          <div class="dropdown dropdown-end lg:hidden">
+            <!-- Button -->
+            <div
+              tabindex="0"
+              role="button"
+              class="btn bg-white rounded-3xl border border-gray-200 px-4 py-2">
+              <svg
+                width="18"
+                height="12"
+                viewBox="0 0 18 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.742065 0.757812H17.2421M0.742065 6.00781H17.2421M0.742065 11.2578H17.2421"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <!-- ./ -->
+            <!-- Mobile Nav Menu -->
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-[1] w-60 p-2 shadow">
+              <!-- Main Mneu -->
+              <li>
+                <a
+                  href="#"
+                  class="hover:font-bold hover:bg-transparent font-bold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:font-bold hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:font-bold hover:bg-transparent"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:font-bold hover:bg-transparent"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:font-bold hover:bg-transparent"
+                  >Contact Us</a
+                >
+              </li>
+              <!-- ./ -->
+              <div class="flex gap-6 justify-center mb-2">
+                <!-- Search Button -->
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white rounded-full border border-gray-200 p-3">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17.5075 17.5098L22.006 22.0113"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M20.0096 11.0104C20.0113 6.03982 15.9832 2.00904 11.0126 2.00739C6.04207 2.00573 2.01129 6.03383 2.00964 11.0044C2.00799 15.975 6.03609 20.0057 11.0066 20.0074C15.9772 20.009 20.008 15.981 20.0096 11.0104Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./ -->
+                <!-- Cart Button -->
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white rounded-full border border-gray-200 p-3">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00795 16.028L15.2711 16.0304C19.7587 16.0319 20.4422 13.2129 21.2713 9.1015C21.5104 7.91561 21.63 7.32267 21.3431 6.92751C21.0561 6.53235 20.5058 6.53216 19.4052 6.5318L6.01111 6.52734"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M8.00795 16.0282L5.39083 3.54225C5.16855 2.65184 4.36878 2.02698 3.45105 2.02668L2.5126 2.02637"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M8.88797 16.0283L8.47653 16.0282C7.11318 16.0277 6.00758 17.1786 6.00711 18.5987C6.00703 18.8354 6.19117 19.0274 6.4184 19.0275L17.507 19.0312"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.506 22.0288C11.3344 22.0291 12.0062 21.3577 12.0065 20.5293C12.0067 19.7009 11.3354 19.0291 10.507 19.0288C9.67853 19.0285 9.00673 19.6999 9.00646 20.5283C9.00618 21.3567 9.67753 22.0285 10.506 22.0288Z"
+                        stroke="#737373"
+                        stroke-width="1.5" />
+                      <path
+                        d="M17.506 22.0313C18.3344 22.0315 19.0062 21.3602 19.0065 20.5318C19.0067 19.7033 18.3354 19.0315 17.507 19.0313C16.6785 19.031 16.0067 19.7023 16.0065 20.5308C16.0062 21.3592 16.6775 22.031 17.506 22.0313Z"
+                        stroke="#737373"
+                        stroke-width="1.5" />
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./ -->
+              </div>
+              <!-- CTA Button -->
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-lg bg-brand font-bold text-lg text-gray-800 rounded-full">
+                  Book Consult
+                  <div class="bg-gray-900 p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <!-- ./ -->
+            </ul>
+            <!-- ./ -->
+          </div>
+          <!-- ./ mobile menu -->
         </header>
         <div class="hero">
           <div class="hero-content flex-col text-center gap-8">
             <img
               src="./img/hero-image.png"
               alt="" />
-            <div class="max-w-5xl">
-              <h1 class="text-6xl font-extrabold text-brandBlack">
+            <div class="lg:max-w-5xl">
+              <h1 class="lg:text-6xl text-3xl font-extrabold text-brandBlack">
                 A barn house of this design has a striking appearance
               </h1>
-              <p class="text-gray-600 mt-6">
+              <p class="text-gray-600 mt-6 text-sm">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents, and large windows that flood the space with natural
@@ -155,7 +380,7 @@
 
             <a
               href="#"
-              class="btn btn-lg bg-brand bg-opacity-50 border border-brand font-bold text-xl text-gray-800 rounded-full">
+              class="btn btn-lg w-full bg-brand bg-opacity-50 border border-brand font-bold text-xl text-gray-800 rounded-full">
               View Details
               <div class="bg-brand p-3 rounded-full">
                 <svg
@@ -182,6 +407,1100 @@
         </div>
       </div>
     </section>
+    <!-- ./ hero section -->
+    <!-- About Us section  -->
+    <section>
+      <!-- Container -->
+      <div class="container py-8 px-6 mx-auto">
+        <!-- Section Head -->
+        <div class="flex flex-col items-center text-center gap-6">
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn rounded-full bg-white font-bold text-base py-2 px-4">
+            <span>
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.071 9.00278H1.51467"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.4425 4.14623C13.4425 4.14623 17.7618 7.79392 17.7619 9.00301C17.7618 10.212 13.4425 13.8597 13.4425 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            About Us
+          </a>
+          <!-- ./buttton -->
+          <h2 class="text-2xl font-bold">
+            We design thoughtful, liveable spaces
+          </h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- ./ Section head -->
+        <!-- Card -->
+        <div class="card card-side justify-between p-8 mt-8 bg-white">
+          <figure class="self-start">
+            <img
+              src="./img/about-1.png"
+              alt="" />
+          </figure>
+          <div class="card-body w-3/4 py-0">
+            <h3 class="card-title">Commercial</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
+        <!-- ./Card -->
+        <!-- Card -->
+        <div class="card card-side justify-between p-8 mt-4 bg-white">
+          <figure class="self-start">
+            <img
+              src="./img/about-2.png"
+              alt="" />
+          </figure>
+          <div class="card-body w-3/4 py-0">
+            <h3 class="card-title">Residential</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
+        <!-- ./Card -->
+        <!-- Image -->
+        <figure class="flex justify-center mt-8 w-full">
+          <img
+            src="./img/about-3.jpg"
+            alt=""
+            class="w-full" />
+        </figure>
+        <!-- ./image -->
+        <div class="bg-white rounded-3xl mt-8 p-6">
+          <!-- Card -->
+          <div class="card items-center p-4">
+            <div>
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.8334 22.8643H27.1667M13.8334 14.531H20.5"
+                  stroke="#737373"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M10.6647 32.031C8.49787 31.8178 6.87462 31.167 5.78599 30.0783C3.83337 28.1258 3.83337 24.983 3.83337 18.6977V17.8643C3.83337 11.5789 3.83337 8.43626 5.78599 6.48362C7.73862 4.53101 10.8813 4.53101 17.1667 4.53101H23.8334C30.1187 4.53101 33.2615 4.53101 35.214 6.48362C37.1667 8.43626 37.1667 11.5789 37.1667 17.8643V18.6977C37.1667 24.983 37.1667 28.1258 35.214 30.0783C33.2615 32.031 30.1187 32.031 23.8334 32.031C22.8992 32.0518 22.1552 32.1228 21.4244 32.2893C19.427 32.7492 17.5775 33.7712 15.7498 34.6625C13.1455 35.9323 11.8434 36.5673 11.0262 35.9728C9.46286 34.8085 10.9909 31.2008 11.3334 29.531"
+                  stroke="#737373"
+                  stroke-width="2.5"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="card-body text-center py-2">
+              <h3 class="text-3xl font-extrabold">235+</h3>
+              <p class="font-medium">Happy Client Review</p>
+            </div>
+          </div>
+          <!-- ./card -->
+          <!-- Card -->
+          <div class="card items-center p-4">
+            <div>
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.5 23.5785L35.4998 15.654C35.4988 13.7618 35.4983 12.8158 35.0383 12.0225C34.5783 11.2293 33.7573 10.7661 32.1153 9.83963L23.74 5.11403C22.1563 4.22046 21.3645 3.77368 20.5 3.77368C19.6355 3.77368 18.8437 4.22046 17.26 5.11403L8.88467 9.83963C7.2427 10.7661 6.42172 11.2293 5.96167 12.0225C5.5016 12.8158 5.50115 13.7618 5.50022 15.654L5.5 23.5785C5.5 29.956 5.5 33.1447 7.45262 35.1258C9.40525 37.107 12.5479 37.107 18.8333 37.107H22.1667C28.452 37.107 31.5948 37.107 33.5473 35.1258C35.5 33.1447 35.5 29.956 35.5 23.5785Z"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M17.1667 22.1071H13.8334M27.1667 22.1071H23.8334M17.1667 15.4404H13.8334M17.1667 28.7738H13.8334M27.1667 15.4404H23.8334M27.1667 28.7738H23.8334"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="card-body text-center py-2">
+              <h3 class="text-3xl font-extrabold">50+</h3>
+              <p class="font-medium">Work Departments</p>
+            </div>
+          </div>
+          <!-- ./card -->
+          <!-- Card -->
+          <div class="card items-center p-4">
+            <div>
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.1233 30.5068C36.3722 30.5068 37.3655 29.721 38.2575 28.622C40.0832 26.3725 37.0855 24.5748 35.9423 23.6945C34.78 22.7995 33.4823 22.2925 32.1667 22.1735M30.5 18.8402C32.8012 18.8402 34.6667 16.9747 34.6667 14.6735C34.6667 12.3723 32.8012 10.5068 30.5 10.5068"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M5.87656 30.5068C4.62772 30.5068 3.63441 29.721 2.74254 28.622C0.916771 26.3725 3.91441 24.5748 5.05771 23.6945C6.21991 22.7995 7.51759 22.2925 8.83329 22.1735M9.66662 18.8402C7.36544 18.8402 5.49996 16.9747 5.49996 14.6735C5.49996 12.3723 7.36544 10.5068 9.66662 10.5068"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.973 25.6921C12.27 26.7451 7.80494 28.8953 10.5245 31.5858C11.8529 32.9001 13.3325 33.8401 15.1927 33.8401H25.8073C27.6675 33.8401 29.147 32.9001 30.4755 31.5858C33.195 28.8953 28.73 26.7451 27.027 25.6921C23.0335 23.2228 17.9665 23.2228 13.973 25.6921Z"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M26.3333 13.0069C26.3333 16.2286 23.7216 18.8403 20.5 18.8403C17.2783 18.8403 14.6666 16.2286 14.6666 13.0069C14.6666 9.78525 17.2783 7.17358 20.5 7.17358C23.7216 7.17358 26.3333 9.78525 26.3333 13.0069Z"
+                  stroke="#737373"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="card-body text-center py-2">
+              <h3 class="text-3xl font-extrabold">20k+</h3>
+              <p class="font-medium">Our Happy Client</p>
+            </div>
+          </div>
+          <!-- ./card -->
+          <!-- Card -->
+          <div class="card items-center p-4">
+            <div>
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31.5269 33.908H32.3439C34.2602 33.908 35.7845 33.0348 37.1532 31.814C40.63 28.7123 32.4569 25.5746 29.6667 25.5746M26.3334 9.02258C26.7119 8.94751 27.1049 8.90796 27.508 8.90796C30.5412 8.90796 33 11.1465 33 13.908C33 16.6694 30.5412 18.908 27.508 18.908C27.1049 18.908 26.7119 18.8685 26.3334 18.7933"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M7.96885 27.4267C6.0039 28.4797 0.851898 30.6299 3.9898 33.3204C5.52265 34.6347 7.22985 35.5747 9.3762 35.5747H21.6238C23.7702 35.5747 25.4773 34.6347 27.0102 33.3204C30.1482 30.6299 24.9962 28.4797 23.0312 27.4267C18.4233 24.9574 12.5767 24.9574 7.96885 27.4267Z"
+                  stroke="#737373"
+                  stroke-width="1.5" />
+                <path
+                  d="M22.1667 13.0746C22.1667 16.7565 19.1819 19.7413 15.5 19.7413C11.8181 19.7413 8.83337 16.7565 8.83337 13.0746C8.83337 9.39273 11.8181 6.40796 15.5 6.40796C19.1819 6.40796 22.1667 9.39273 22.1667 13.0746Z"
+                  stroke="#737373"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="card-body text-center py-2">
+              <h3 class="text-3xl font-extrabold">135+</h3>
+              <p class="font-medium">Staff Members</p>
+            </div>
+          </div>
+          <!-- ./card -->
+        </div>
+      </div>
+    </section>
+    <!-- ./about section -->
+    <!-- How we work section -->
+    <section>
+      <!-- Container -->
+      <div class="container py-8 px-6 mx-auto">
+        <!-- Section Head -->
+        <div class="flex flex-col items-center text-center gap-6">
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn rounded-full bg-white font-bold text-base py-2 px-4">
+            <span>
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.071 9.00278H1.51467"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.4425 4.14623C13.4425 4.14623 17.7618 7.79392 17.7619 9.00301C17.7618 10.212 13.4425 13.8597 13.4425 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            How we works
+          </a>
+          <!-- ./buttton -->
+          <h2 class="text-2xl font-bold">Our Works Process</h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- ./ Section head -->
+        <!-- Cards content -->
+        <div class="mt-8">
+          <!-- Card -->
+          <div class="card flex-col items-start p-8 mt-4 gap-3 bg-fuchsia-300">
+            <figure>
+              <img
+                src="./img/work-1.svg"
+                alt="" />
+            </figure>
+
+            <h3 class="card-title">Commercial</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card flex-col items-start p-8 mt-4 gap-3 bg-amber-300">
+            <figure>
+              <img
+                src="./img/work-2.svg"
+                alt="" />
+            </figure>
+
+            <h3 class="card-title">Design Process</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card flex-col items-start p-8 mt-4 gap-3 bg-emerald-300">
+            <figure>
+              <img
+                src="./img/work-3.svg"
+                alt="" />
+            </figure>
+
+            <h3 class="card-title">Supervision</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card flex-col items-start p-8 mt-4 gap-3 bg-blue-400">
+            <figure>
+              <img
+                src="./img/work-4.svg"
+                alt="" />
+            </figure>
+
+            <h3 class="card-title">Budget Planning</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- ./Card -->
+        </div>
+        <!-- ./card content -->
+      </div>
+      <!-- ./container -->
+    </section>
+    <!-- ./how we work -->
+    <!-- Our work section -->
+    <section>
+      <!-- Container -->
+      <div class="container py-8 px-6 mx-auto">
+        <!-- Section Head -->
+        <div class="flex flex-col items-center text-center gap-6 my-4">
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn rounded-full bg-brand bg-opacity-20 font-bold text-base py-2 px-4">
+            <span>
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.071 9.00278H1.51467"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.4425 4.14623C13.4425 4.14623 17.7618 7.79392 17.7619 9.00301C17.7618 10.212 13.4425 13.8597 13.4425 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            Explore our Latest works
+          </a>
+          <!-- ./buttton -->
+          <h2 class="text-2xl font-extrabold">Our Works Process</h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- ./ Section head -->
+        <!-- Section content -->
+        <div>
+          <!-- Card -->
+          <div class="card bg-white p-6 border border-gray-200">
+            <figure>
+              <img
+                src="./img/portfolio-1.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+            <div class="card-content mt-6">
+              <h2 class="font-extrabold text-xl">Commercial</h2>
+              <p class="my-5">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <div class="card-actions">
+                <a
+                  href="#"
+                  class="btn bg-transparent p-0 border-none font-extrabold text-base text-gray-800 rounded-full">
+                  Book Consult
+                  <div class="bg-brand p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card bg-white p-6 mt-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/portfolio-2.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+          </div>
+        </div>
+        <!-- ./Section content -->
+        <!-- Section content -->
+        <div>
+          <!-- Card -->
+          <div class="card bg-white p-6 mt-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/portfolio-3.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card bg-white p-6 mt-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/portfolio-4.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+            <div class="card-content mt-6">
+              <h2 class="font-extrabold text-xl">Commercial</h2>
+              <p class="my-5">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <div class="card-actions">
+                <a
+                  href="#"
+                  class="btn bg-transparent p-0 border-none font-extrabold text-base text-gray-800 rounded-full">
+                  Book Consult
+                  <div class="bg-gray-900 p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card bg-white p-6 mt-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/portfolio-5.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+          </div>
+          <!-- ./Card -->
+        </div>
+        <!-- ./Section content -->
+      </div>
+      <!-- ./Container -->
+    </section>
+    <!-- ./Our work section -->
+
+    <!-- News Section -->
+    <section>
+      <!-- Container -->
+      <div class="container mx-auto p-6">
+        <!-- Section Head -->
+        <div class="flex flex-col items-center text-center gap-6 my-4">
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn rounded-full bg-brand bg-opacity-20 font-bold text-base py-2 px-4">
+            <span>
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.071 9.00278H1.51467"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.4425 4.14623C13.4425 4.14623 17.7618 7.79392 17.7619 9.00301C17.7618 10.212 13.4425 13.8597 13.4425 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            Rinterio News
+          </a>
+          <!-- ./buttton -->
+          <h2 class="text-2xl font-extrabold">Read Our Article and News</h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- ./ Section head -->
+        <!-- News Content -->
+        <div>
+          <!-- Card -->
+          <div class="card bg-white p-6 my-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/news-1.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+            <div class="card-content mt-6">
+              <div class="flex gap-4 mb-6">
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18 2.63867V4.63867M6 2.63867V4.63867"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M11.9955 13.6387H12.0045M11.9955 17.6387H12.0045M15.991 13.6387H16M8 13.6387H8.00897M8 17.6387H8.00897"
+                        stroke="#737373"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3.5 8.63867H20.5"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M2.5 12.8819C2.5 8.52461 2.5 6.34595 3.75212 4.99231C5.00424 3.63867 7.01949 3.63867 11.05 3.63867H12.95C16.9805 3.63867 18.9958 3.63867 20.2479 4.99231C21.5 6.34595 21.5 8.52461 21.5 12.8819V13.3955C21.5 17.7528 21.5 19.9314 20.2479 21.2851C18.9958 22.6387 16.9805 22.6387 12.95 22.6387H11.05C7.01949 22.6387 5.00424 22.6387 3.75212 21.2851C2.5 19.9314 2.5 17.7528 2.5 13.3955V12.8819Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3 8.63867H21"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>July14, 2024</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0063 22.6387C17.5292 22.6387 22.0063 18.1615 22.0063 12.6387C22.0063 7.11582 17.5292 2.63867 12.0063 2.63867C6.4835 2.63867 2.00635 7.11582 2.00635 12.6387C2.00635 18.1615 6.4835 22.6387 12.0063 22.6387Z"
+                        stroke="#737373"
+                        stroke-width="1.5" />
+                      <path
+                        d="M7.50635 17.6387C9.83805 15.1965 14.1495 15.0815 16.5063 17.6387M14.5014 10.1387C14.5014 11.5194 13.3805 12.6387 11.9978 12.6387C10.6152 12.6387 9.49432 11.5194 9.49432 10.1387C9.49432 8.75796 10.6152 7.63867 11.9978 7.63867C13.3805 7.63867 14.5014 8.75796 14.5014 10.1387Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <span>By Admin</span>
+                </a>
+              </div>
+              <h2 class="font-extrabold text-xl">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="my-5 text-gray-500 font-medium">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <div class="card-actions">
+                <a
+                  href="#"
+                  class="btn bg-transparent p-0 border-none font-extrabold text-base text-gray-800 rounded-full">
+                  Read More
+                  <div class="bg-brand p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card bg-white p-6 my-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/news-2.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+            <div class="card-content mt-6">
+              <div class="flex gap-4 mb-6">
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18 2.63867V4.63867M6 2.63867V4.63867"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M11.9955 13.6387H12.0045M11.9955 17.6387H12.0045M15.991 13.6387H16M8 13.6387H8.00897M8 17.6387H8.00897"
+                        stroke="#737373"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3.5 8.63867H20.5"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M2.5 12.8819C2.5 8.52461 2.5 6.34595 3.75212 4.99231C5.00424 3.63867 7.01949 3.63867 11.05 3.63867H12.95C16.9805 3.63867 18.9958 3.63867 20.2479 4.99231C21.5 6.34595 21.5 8.52461 21.5 12.8819V13.3955C21.5 17.7528 21.5 19.9314 20.2479 21.2851C18.9958 22.6387 16.9805 22.6387 12.95 22.6387H11.05C7.01949 22.6387 5.00424 22.6387 3.75212 21.2851C2.5 19.9314 2.5 17.7528 2.5 13.3955V12.8819Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3 8.63867H21"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>July14, 2024</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0063 22.6387C17.5292 22.6387 22.0063 18.1615 22.0063 12.6387C22.0063 7.11582 17.5292 2.63867 12.0063 2.63867C6.4835 2.63867 2.00635 7.11582 2.00635 12.6387C2.00635 18.1615 6.4835 22.6387 12.0063 22.6387Z"
+                        stroke="#737373"
+                        stroke-width="1.5" />
+                      <path
+                        d="M7.50635 17.6387C9.83805 15.1965 14.1495 15.0815 16.5063 17.6387M14.5014 10.1387C14.5014 11.5194 13.3805 12.6387 11.9978 12.6387C10.6152 12.6387 9.49432 11.5194 9.49432 10.1387C9.49432 8.75796 10.6152 7.63867 11.9978 7.63867C13.3805 7.63867 14.5014 8.75796 14.5014 10.1387Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <span>By Admin</span>
+                </a>
+              </div>
+              <h2 class="font-extrabold text-xl">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="my-5 text-gray-500 font-medium">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <div class="card-actions">
+                <a
+                  href="#"
+                  class="btn bg-transparent p-0 border-none font-extrabold text-base text-gray-800 rounded-full">
+                  Read More
+                  <div class="bg-brand p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card -->
+          <!-- Card -->
+          <div class="card bg-white p-6 my-4 border border-gray-200">
+            <figure>
+              <img
+                src="./img/news-3.jpg"
+                alt=""
+                class="w-full" />
+            </figure>
+            <div class="card-content mt-6">
+              <div class="flex gap-4 mb-6">
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18 2.63867V4.63867M6 2.63867V4.63867"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M11.9955 13.6387H12.0045M11.9955 17.6387H12.0045M15.991 13.6387H16M8 13.6387H8.00897M8 17.6387H8.00897"
+                        stroke="#737373"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3.5 8.63867H20.5"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M2.5 12.8819C2.5 8.52461 2.5 6.34595 3.75212 4.99231C5.00424 3.63867 7.01949 3.63867 11.05 3.63867H12.95C16.9805 3.63867 18.9958 3.63867 20.2479 4.99231C21.5 6.34595 21.5 8.52461 21.5 12.8819V13.3955C21.5 17.7528 21.5 19.9314 20.2479 21.2851C18.9958 22.6387 16.9805 22.6387 12.95 22.6387H11.05C7.01949 22.6387 5.00424 22.6387 3.75212 21.2851C2.5 19.9314 2.5 17.7528 2.5 13.3955V12.8819Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M3 8.63867H21"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>July14, 2024</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex gap-2 text-gray-500 font-medium">
+                  <span
+                    ><svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0063 22.6387C17.5292 22.6387 22.0063 18.1615 22.0063 12.6387C22.0063 7.11582 17.5292 2.63867 12.0063 2.63867C6.4835 2.63867 2.00635 7.11582 2.00635 12.6387C2.00635 18.1615 6.4835 22.6387 12.0063 22.6387Z"
+                        stroke="#737373"
+                        stroke-width="1.5" />
+                      <path
+                        d="M7.50635 17.6387C9.83805 15.1965 14.1495 15.0815 16.5063 17.6387M14.5014 10.1387C14.5014 11.5194 13.3805 12.6387 11.9978 12.6387C10.6152 12.6387 9.49432 11.5194 9.49432 10.1387C9.49432 8.75796 10.6152 7.63867 11.9978 7.63867C13.3805 7.63867 14.5014 8.75796 14.5014 10.1387Z"
+                        stroke="#737373"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <span>By Admin</span>
+                </a>
+              </div>
+              <h2 class="font-extrabold text-xl">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="my-5 text-gray-500 font-medium">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <div class="card-actions">
+                <a
+                  href="#"
+                  class="btn bg-transparent p-0 border-none font-extrabold text-base text-gray-800 rounded-full">
+                  Read More
+                  <div class="bg-brand p-3 rounded-full">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0109 2.10278L1.00728 13.0991"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card -->
+        </div>
+        <!-- ./News Content -->
+      </div>
+      <!-- ./Container -->
+    </section>
+    <!-- ./News Section -->
+
+    <!-- Contact -->
+    <section
+      class="bg-[url('/img/contact-bg.png')] bg-cover bg-center border-4 border-white w-full">
+      <div class="container mx-auto p-6">
+        <!-- Section Head -->
+        <div class="flex flex-col items-center text-center gap-6 my-4">
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn rounded-full bg-brand bg-opacity-20 font-bold text-base py-2 px-4">
+            <span>
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.071 9.00278H1.51467"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.4425 4.14623C13.4425 4.14623 17.7618 7.79392 17.7619 9.00301C17.7618 10.212 13.4425 13.8597 13.4425 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            Let’s Connect
+          </a>
+          <!-- ./buttton -->
+          <h2 class="text-2xl font-extrabold">Let’s Discuss Next Project</h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- ./ Section head -->
+        <!-- Contact form -->
+        <div class="mb-24 flex flex-col gap-5">
+          <!-- Input Group -->
+          <div class="flex flex-col gap-5">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="border border-gray-200 rounded-full py-4 px-5 text-base w-full" />
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="border border-gray-200 rounded-full py-4 px-5 text-base w-full" />
+          </div>
+          <!-- ./Input group -->
+          <!-- Input Group -->
+          <div class="flex flex-col gap-5">
+            <input
+              type="text"
+              placeholder="Phone Number*"
+              class="border border-gray-200 rounded-full py-4 px-5 text-base w-full" />
+            <input
+              type="text"
+              placeholder="Email Address*"
+              class="border border-gray-200 rounded-full py-4 px-5 text-base w-full" />
+          </div>
+          <!-- ./Input group -->
+          <!-- Textarea -->
+          <textarea
+            class="border border-gray-200 py-4 px-5 rounded-3xl"
+            rows="5"
+            placeholder="Write your message here..."></textarea>
+          <!-- ./Textarea -->
+          <!-- Submit Button -->
+          <a
+            href="#"
+            class="btn btn-lg bg-brand font-bold text-xl text-gray-800 rounded-full">
+            Send Message
+            <div class="bg-gray-900 p-3 rounded-full">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0109 2.10278L1.00728 13.0991"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </a>
+          <!-- ./Submit Button -->
+        </div>
+        <!-- ./Contact form -->
+      </div>
+    </section>
+    <!-- ./Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 p-8">
+      <div
+        class="container mx-auto p-6 flex flex-col items-center gap-4 text-center">
+        <a
+          href="#"
+          class="flex gap-2">
+          <div class="bg-brand p-3 rounded-full">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.0109 2.10278L1.00728 13.0991"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round" />
+              <path
+                d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h1 class="text-4xl font-extrabold text-white">Rinterio</h1>
+        </a>
+        <p class="text-gray-100">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <!-- Footer Menu -->
+        <ul class="menu menu-vertical items-center text-base text-gray-100">
+          <li>
+            <a
+              href="#"
+              class="hover:font-bold hover:bg-transparent font-bold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:font-bold hover:bg-transparent"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:font-bold hover:bg-transparent"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:font-bold hover:bg-transparent"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:font-bold hover:bg-transparent"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <!-- ./Footer menu -->
+        <!-- CTA Button -->
+        <a
+          href="#"
+          class="btn btn-lg bg-brand font-bold text-xl text-gray-800 rounded-full">
+          Book Consult
+          <div class="bg-gray-900 p-3 rounded-full">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.0109 2.10278L1.00728 13.0991"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round" />
+              <path
+                d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </a>
+        <!-- ./CTA Button -->
+      </div>
+    </footer>
+    <!-- ./Footer -->
 
     <!-- Feather Function -->
     <script>
